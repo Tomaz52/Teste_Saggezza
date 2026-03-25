@@ -1,26 +1,36 @@
-using AuthService.Domain.Entities;
-using AuthService.Domain.Interfaces;
+﻿using AuthService.Application.Interfaces;
+using AuthService.Infrastructure.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AuthService.Application.UseCases;
-
-public class LoginUseCase
+namespace AuthService.Application.UseCases
 {
-    private readonly IUserRepository _repository;
-    private readonly JwtService _jwtService;
-
-    public LoginUseCase(IUserRepository repository, JwtService jwtService)
+    public class LoginUseCase
     {
-        _repository = repository;
-        _jwtService = jwtService;
-    }
+        private readonly IUserRepository _userRepository;
+        private readonly JwtService _jwtService;
 
-    public async Task<string> Execute(string email, string password)
-    {
-        var user = await _repository.GetByEmail(email);
+        public LoginUseCase(IUserRepository userRepository, JwtService jwtService)
+        {
+            _userRepository = userRepository;
+            _jwtService = jwtService;
+        }
 
-        if (user == null || user.Password != password)
-            throw new Exception("Credenciais inválidas");
+        public async Task<string> Execute(string username, string password)
+        {
+            // 🔍 Busca usuário no banco
+            var user = await _userRepository.GetByUsername(username);
 
-        return _jwtService.Generate(user);
+            if (user == null || user.Password != password)
+                throw new Exception("Usuário ou senha inválidos");
+
+            // 🔐 Gera token 
+            var token = _jwtService.GenerateToken(user.Id, user.Role);
+
+            return token;
+        }
     }
 }

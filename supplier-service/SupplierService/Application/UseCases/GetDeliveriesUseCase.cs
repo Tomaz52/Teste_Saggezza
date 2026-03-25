@@ -1,3 +1,5 @@
+using SupplierService.Domain.Interfaces;
+using SupplierService.Domain.Entities;
 public class GetDeliveriesUseCase
 {
     private readonly IDeliveryRepository _repository;

@@ -1,0 +1,9 @@
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.csproj.AssemblyReference.cache
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.GeneratedMSBuildEditorConfig.editorconfig
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.AssemblyInfoInputs.cache
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.AssemblyInfo.cs
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.csproj.CoreCompileInputs.cache
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.MvcApplicationPartsAssemblyInfo.cs
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.MvcApplicationPartsAssemblyInfo.cache
+D:\ChurchGames\Teste_Saggezza\auth-service\AuthService\obj\Debug\net9.0\AuthService.sourcelink.json

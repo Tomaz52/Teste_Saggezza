@@ -1,32 +1,71 @@
-[ApiController]
-[Route("auth")]
-public class AuthController : ControllerBase
+using AuthService.Application.Interfaces;
+using AuthService.Application.UseCases;
+using AuthService.Domain.Entities;
+using AuthService.Infrastructure.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+namespace AuthService.API.Controllers
 {
-    private readonly IUserRepository _repo;
-    private readonly JwtService _jwt;
-
-    public AuthController(IUserRepository repo, JwtService jwt)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AuthController : ControllerBase
     {
-        _repo = repo;
-        _jwt = jwt;
-    }
+        private readonly LoginUseCase _loginUseCase;
+        private readonly IUserRepository _userRepository;
 
-    [HttpPost("register")]
-    public async Task<IActionResult> Register(User user)
-    {
-        await _repo.Add(user);
-        return Ok();
-    }
+        public AuthController(LoginUseCase loginUseCase, IUserRepository userRepository)
+        {
+            _loginUseCase = loginUseCase;
+            _userRepository = userRepository;
+        }
 
-    [HttpPost("login")]
-    public async Task<IActionResult> Login(string email, string password)
-    {
-        var user = await _repo.GetByEmail(email);
+        //  DTOs internos (simples para MVP)
+        public class RegisterRequest
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
 
-        if (user == null || user.Password != password)
-            return Unauthorized();
+        public class LoginRequest
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
 
-        var token = _jwt.Generate(user);
-        return Ok(new { token });
+        //  REGISTRO
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
+        {
+            var user = new User
+            {
+                Id = Guid.NewGuid(),
+                Username = request.Username,
+                Password = request.Password, // ⚠️ depois você pode aplicar hash
+                Role = "User"
+            };
+
+            await _userRepository.Add(user);
+
+            return Ok(new { message = "Usuário criado com sucesso" });
+        }
+
+        //  LOGIN
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        {
+            try
+            {
+                var token = await _loginUseCase.Execute(request.Username, request.Password);
+
+                return Ok(new { token });
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized(new { message = ex.Message });
+            }
+        }
     }
 }

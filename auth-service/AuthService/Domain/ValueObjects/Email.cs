@@ -1,16 +1,23 @@
-namespace SupplierService.Domain.ValueObjects;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Email
+namespace AuthService.Domain.ValueObjects
 {
-    public string Address { get; private set; }
-
-    public Email(string address)
+    public class Email
     {
-        if (string.IsNullOrWhiteSpace(address) || !address.Contains("@"))
-            throw new ArgumentException("Email inválido");
+        public string Address { get; private set; }
 
-        Address = address;
+        public Email(string address)
+        {
+            if (string.IsNullOrWhiteSpace(address) || !address.Contains("@"))
+                throw new ArgumentException("Email inválido");
+
+            Address = address;
+        }
+
+        public override string ToString() => Address;
     }
-
-    public override string ToString() => Address;
 }

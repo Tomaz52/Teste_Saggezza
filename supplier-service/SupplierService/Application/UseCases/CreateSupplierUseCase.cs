@@ -1,6 +1,7 @@
 using SupplierService.Domain.Entities;
 using SupplierService.Domain.Interfaces;
 using SupplierService.Application.DTOs;
+using SupplierService.Domain.Interfaces;
 
 namespace SupplierService.Application.UseCases;
 

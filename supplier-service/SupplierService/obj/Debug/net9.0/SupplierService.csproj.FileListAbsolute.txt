@@ -1,0 +1,9 @@
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.csproj.AssemblyReference.cache
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.GeneratedMSBuildEditorConfig.editorconfig
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.AssemblyInfoInputs.cache
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.AssemblyInfo.cs
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.csproj.CoreCompileInputs.cache
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.MvcApplicationPartsAssemblyInfo.cs
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.MvcApplicationPartsAssemblyInfo.cache
+D:\ChurchGames\Teste_Saggezza\supplier-service\SupplierService\obj\Debug\net9.0\SupplierService.sourcelink.json
