@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\obj\\Debug\\net8.0\\AuthService.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\AuthService.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BDE843B-6C3A-DF3D-4B0D-1EE5DDE2C18D}|AuthService.csproj|d:\\churchgames\\teste_saggezza\\auth-service\\authservice\\api\\controllers\\obj\\debug\\net8.0\\supplierservice.api.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BDE843B-6C3A-DF3D-4B0D-1EE5DDE2C18D}|AuthService.csproj|solutionrelative:api\\controllers\\obj\\debug\\net8.0\\supplierservice.api.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BDE843B-6C3A-DF3D-4B0D-1EE5DDE2C18D}|AuthService.csproj|d:\\churchgames\\teste_saggezza\\auth-service\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BDE843B-6C3A-DF3D-4B0D-1EE5DDE2C18D}|AuthService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "AuthService.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\obj\\Debug\\net8.0\\AuthService.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\AuthService.AssemblyInfo.cs",
+              "ToolTip": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\obj\\Debug\\net8.0\\AuthService.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\AuthService.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T18:00:17.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupplierService.API.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\API\\Controllers\\obj\\Debug\\net8.0\\SupplierService.API.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\obj\\Debug\\net8.0\\SupplierService.API.AssemblyInfo.cs",
+              "ToolTip": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\API\\Controllers\\obj\\Debug\\net8.0\\SupplierService.API.AssemblyInfo.cs",
+              "RelativeToolTip": "API\\Controllers\\obj\\Debug\\net8.0\\SupplierService.API.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T17:55:48.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InMemoryUserRepository.cs",
               "DocumentMoniker": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\Infrastructure\\Repositories\\InMemoryUserRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\InMemoryUserRepository.cs",
@@ -38,38 +72,36 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\InMemoryUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T17:46:58.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T17:46:58.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService",
+              "DocumentIndex": 4,
+              "Title": "AuthService.csproj",
               "DocumentMoniker": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\AuthService.csproj",
               "RelativeDocumentMoniker": "AuthService.csproj",
               "ToolTip": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\AuthService.csproj",
               "RelativeToolTip": "AuthService.csproj",
               "ViewState": "AgIAABkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-25T17:45:49.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T17:45:49.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T17:44:43.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\ChurchGames\\Teste_Saggezza\\auth-service\\AuthService\\API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
@@ -77,8 +109,7 @@
               "RelativeToolTip": "API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T17:36:23.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T17:36:23.821Z"
             }
           ]
         }
